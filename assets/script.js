@@ -52,3 +52,10 @@ function updateBanner(index) {
     }
   });
 }
+
+// Gestion du clic sur la flèche droite
+arrowRight.addEventListener("click", () => {
+  console.log("Clic sur la flèche droite");
+  currentSlide = (currentSlide + 1) % slides.length; // Passage à la slide suivante (boucle)
+  updateBanner(currentSlide); // Mise à jour du contenu
+});
