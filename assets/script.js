@@ -53,6 +53,8 @@ function updateBanner(index) {
   });
 }
 
+initializeDots();
+
 // Gestion du clic sur la flèche droite
 arrowRight.addEventListener("click", () => {
   console.log("Clic sur la flèche droite");
