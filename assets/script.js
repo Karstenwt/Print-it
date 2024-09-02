@@ -59,3 +59,11 @@ arrowRight.addEventListener("click", () => {
   currentSlide = (currentSlide + 1) % slides.length; // Passage à la slide suivante (boucle)
   updateBanner(currentSlide); // Mise à jour du contenu
 });
+
+//gestion du clic su la flèche gauche
+
+arrowLeft.addEventListener("click", () => {
+  console.log("clic sur la flèche gauche");
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  updateBanner(currentSlide);
+});
